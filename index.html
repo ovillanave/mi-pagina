@@ -1,173 +1,442 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Legis Anima: Servicios legales y psicológicos integrales en Costa Rica. Justicia externa y paz interna.">
-    <title>Legis Anima | Ley y Alma</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Legis Anima — Servicios jurídicos y psicológicos en Costa Rica y en línea. La respuesta integral a los desafíos de la vida." />
+  <title>Legis Anima — Ley y Alma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <img src="C:\Users\ovill\OneDrive\Desktop\Logo.png"
-        
-     <!-- Services Section -->
-    <section id="servicios" class="services">
-        <div class="container">
-            <h2>Nuestros Servicios</h2>
-            <div class="services-grid">
-                <!-- Psychological Services -->
-                <div class="service-column psychology">
-                    <div class="service-image-placeholder">
-                        <i class="fas fa-brain fa-3x"></i>
-                        <p>[Imagen Psicología]</p>
-                    </div>
-                    <h3>Área Psicológica</h3>
-                    <ul>
-                        <li><i class="fas fa-brain"></i> Terapia especializada para Ansiedad</li>
-                        <li><i class="fas fa-cloud-rain"></i> Depresión</li>
-                        <li><i class="fas fa-exclamation-circle"></i> Pánicos</li>
-                        <li><i class="fas fa-spider"></i> Fobias</li>
-                        <li><i class="fas fa-sync-alt"></i> TOC</li>
-                        <li><i class="fas fa-heart-broken"></i> Estrés Postraumático</li>
-                        <li><i class="fas fa-users"></i> Talleres</li>
-                    </ul>
-                </div>
 
-                <!-- Legal Services -->
-                <div class="service-column legal">
-                    <div class="service-image-placeholder">
-                        <i class="fas fa-gavel fa-3x"></i>
-                        <p>[Imagen Jurídica]</p>
-                    </div>
-                    <h3>Área Jurídica</h3>
-                    <ul>
-                        <li><i class="fas fa-gavel"></i> Derecho Penal</li>
-                        <li><i class="fas fa-home"></i> Derecho de Familia</li>
-                        <li><i class="fas fa-briefcase"></i> Derecho Laboral</li>
-                        <li><i class="fas fa-balance-scale"></i> Derecho Constitucional</li>
-                        <li><i class="fas fa-file-contract"></i> Derecho Civil</li>
-                        <li><i class="fas fa-building"></i> Derecho Administrativo</li>
-                        <li><i class="fas fa-signature"></i> Servicios Notariales</li>
-                    </ul>
-                </div>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="38" y="55" width="24" height="38" fill="#1a3a6b"/>
+        <rect x="30" y="48" width="40" height="10" rx="2" fill="#1a3a6b"/>
+        <rect x="42" y="88" width="16" height="6" rx="1" fill="#1a3a6b"/>
+        <ellipse cx="50" cy="35" rx="22" ry="18" fill="#5c2d91" opacity="0.15"/>
+        <path d="M34 38 C34 26 40 20 50 20 C60 20 66 26 66 38" stroke="#5c2d91" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <path d="M38 35 C38 28 43 23 50 23 C57 23 62 28 62 35" stroke="#7b45b8" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <circle cx="44" cy="33" r="2.5" fill="#9b6ddb"/>
+        <circle cx="56" cy="33" r="2.5" fill="#9b6ddb"/>
+        <path d="M44 36 Q50 42 56 36" stroke="#7b45b8" stroke-width="1.5" fill="none"/>
+      </svg>
+      <span class="nav-logo-text">Legis <em>Anima</em></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#identidad">Identidad</a></li>
+      <li><a href="#cita" class="nav-cta">Agendar Cita</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">&#9776;</button>
+  </nav>
+
+  <!-- LOGO SPLASH -->
+  <section class="logo-splash" id="inicio">
+    <div class="splash-bg"></div>
+    <div class="splash-content">
+      <div class="logo-container">
+        <svg class="main-logo-svg" viewBox="0 0 300 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Column base -->
+          <rect x="120" y="295" width="60" height="14" rx="3" fill="#1a4a8a"/>
+          <!-- Column shaft -->
+          <rect x="134" y="155" width="32" height="142" fill="#1e52a0"/>
+          <!-- Column fluting lines -->
+          <line x1="140" y1="155" x2="140" y2="297" stroke="#2563c7" stroke-width="1.2" opacity="0.6"/>
+          <line x1="146" y1="155" x2="146" y2="297" stroke="#2563c7" stroke-width="1.2" opacity="0.6"/>
+          <line x1="152" y1="155" x2="152" y2="297" stroke="#2563c7" stroke-width="1.2" opacity="0.6"/>
+          <line x1="158" y1="155" x2="158" y2="297" stroke="#2563c7" stroke-width="1.2" opacity="0.6"/>
+          <line x1="164" y1="155" x2="164" y2="297" stroke="#2563c7" stroke-width="1.2" opacity="0.6"/>
+          <!-- Column capital -->
+          <rect x="115" y="140" width="70" height="18" rx="2" fill="#1a4a8a"/>
+          <rect x="108" y="130" width="84" height="12" rx="2" fill="#1e52a0"/>
+          <!-- Column entablature -->
+          <rect x="100" y="118" width="100" height="14" rx="2" fill="#1a4a8a"/>
+          <!-- Brain glow -->
+          <ellipse cx="150" cy="80" rx="68" ry="58" fill="#5c2d91" opacity="0.12"/>
+          <ellipse cx="150" cy="80" rx="55" ry="45" fill="#6d35aa" opacity="0.08"/>
+          <!-- Brain - left hemisphere -->
+          <path d="M150 45 C130 42 112 50 108 65 C104 78 110 90 118 98 C124 104 132 108 140 110 C144 111 148 112 150 112" stroke="#7b3fbf" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <!-- Brain - right hemisphere -->
+          <path d="M150 45 C170 42 188 50 192 65 C196 78 190 90 182 98 C176 104 168 108 160 110 C156 111 152 112 150 112" stroke="#7b3fbf" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <!-- Brain center line -->
+          <line x1="150" y1="45" x2="150" y2="112" stroke="#5c2d91" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.7"/>
+          <!-- Brain folds - left -->
+          <path d="M118 70 C124 66 130 68 134 72" stroke="#9b6ddb" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M112 82 C120 77 128 80 133 85" stroke="#9b6ddb" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M116 94 C123 90 130 93 135 98" stroke="#9b6ddb" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <!-- Brain folds - right -->
+          <path d="M182 70 C176 66 170 68 166 72" stroke="#9b6ddb" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M188 82 C180 77 172 80 167 85" stroke="#9b6ddb" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M184 94 C177 90 170 93 165 98" stroke="#9b6ddb" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <!-- Highlight dots -->
+          <circle cx="128" cy="58" r="3" fill="#b08de8" opacity="0.8"/>
+          <circle cx="172" cy="58" r="3" fill="#b08de8" opacity="0.8"/>
+          <circle cx="150" cy="48" r="2.5" fill="#c4a6f0" opacity="0.9"/>
+        </svg>
+      </div>
+      <div class="logo-wordmark">
+        <h1 class="brand-name">Legis <span>Anima</span></h1>
+        <p class="brand-tagline">Ley y Alma</p>
+      </div>
+      <p class="brand-slogan">"La respuesta integral a los desafíos de la vida."</p>
+      <a href="https://wa.me/50688301170?text=Hola%2C%20deseo%20agendar%20una%20cita%20en%20Legis%20Anima" target="_blank" rel="noopener" class="btn-whatsapp btn-hero" id="cita-hero">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Agendar Cita por WhatsApp
+      </a>
+      <div class="scroll-indicator">
+        <span>Descubre más</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HERO TEXT SECTION -->
+  <section class="hero-section">
+    <div class="container">
+      <h2 class="hero-title">La respuesta integral<br/>a los desafíos de la vida.</h2>
+      <p class="hero-subtitle">Porque creemos que la justicia externa y la paz interna son dos caras de la misma moneda. Aquí cuidamos tu entorno legal y fortalecemos tu salud emocional bajo un mismo estándar de excelencia y calidez humana.</p>
+      <div class="hero-badges">
+        <div class="badge"><span class="badge-icon">⚖️</span> Asesoría Jurídica Experta</div>
+        <div class="badge"><span class="badge-icon">🧠</span> Salud Mental Profesional</div>
+        <div class="badge"><span class="badge-icon">🌐</span> Virtual y Presencial</div>
+        <div class="badge"><span class="badge-icon">🔒</span> Confidencialidad Absoluta</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services-section" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Nuestros Servicios</span>
+        <h2>Catálogo de Servicios Profesionales</h2>
+        <p>Atención especializada en dos pilares fundamentales de tu bienestar.</p>
+      </div>
+      <div class="services-grid">
+
+        <!-- Psychological -->
+        <div class="service-card" id="psicologia">
+          <div class="service-image psi-image">
+            <svg viewBox="0 0 600 280" fill="none" xmlns="http://www.w3.org/2000/svg" class="service-svg">
+              <rect width="600" height="280" fill="url(#psiGrad)"/>
+              <defs>
+                <linearGradient id="psiGrad" x1="0" y1="0" x2="600" y2="280" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#1a0533"/>
+                  <stop offset="100%" stop-color="#2d0a5a"/>
+                </linearGradient>
+              </defs>
+              <!-- Armchair -->
+              <path d="M220 200 Q220 170 240 165 L360 165 Q380 170 380 200 L380 230 L220 230 Z" fill="#3a1060" opacity="0.8"/>
+              <path d="M215 195 Q210 175 225 168 L225 230 L215 230 Z" fill="#4a1880" opacity="0.7"/>
+              <path d="M385 195 Q390 175 375 168 L375 230 L385 230 Z" fill="#4a1880" opacity="0.7"/>
+              <path d="M230 165 Q230 140 245 135 L355 135 Q370 140 370 165" fill="#5c2d91" opacity="0.6"/>
+              <!-- Person silhouette -->
+              <ellipse cx="300" cy="128" rx="22" ry="25" fill="#9b6ddb" opacity="0.5"/>
+              <path d="M278 180 Q278 155 300 152 Q322 155 322 180 L322 200 L278 200 Z" fill="#7b45b8" opacity="0.5"/>
+              <!-- Window light -->
+              <rect x="60" y="60" width="80" height="140" rx="4" fill="#b08de8" opacity="0.08"/>
+              <rect x="80" y="60" width="4" height="140" fill="#b08de8" opacity="0.2"/>
+              <rect x="60" y="128" width="80" height="4" fill="#b08de8" opacity="0.2"/>
+              <path d="M60 60 L60 200 L140 200 L140 60" stroke="#c4a6f0" stroke-width="1" fill="none" opacity="0.3"/>
+              <!-- Light rays -->
+              <path d="M140 80 L280 140" stroke="#d4b8ff" stroke-width="1" opacity="0.15"/>
+              <path d="M140 100 L280 160" stroke="#d4b8ff" stroke-width="1" opacity="0.15"/>
+              <path d="M140 120 L280 180" stroke="#d4b8ff" stroke-width="1" opacity="0.12"/>
+              <!-- Small circular elements (mind/thoughts) -->
+              <circle cx="440" cy="90" r="30" fill="#5c2d91" opacity="0.25"/>
+              <circle cx="480" cy="130" r="18" fill="#7b45b8" opacity="0.2"/>
+              <circle cx="410" cy="140" r="12" fill="#9b6ddb" opacity="0.2"/>
+              <circle cx="450" cy="60" r="8" fill="#b08de8" opacity="0.3"/>
+              <!-- Heart/empathy symbol -->
+              <path d="M295 95 C295 91 298 88 302 88 C306 88 309 91 309 95 C309 99 302 106 302 106 C302 106 295 99 295 95Z" fill="#c4a6f0" opacity="0.6"/>
+            </svg>
+            <div class="service-image-overlay"></div>
+            <div class="service-image-label">Área Psicológica</div>
+          </div>
+          <div class="service-content">
+            <div class="service-icon-wrap psi-icon">
+              <svg width="28" height="28" viewBox="0 0 100 100" fill="none"><ellipse cx="50" cy="45" rx="35" ry="30" fill="none" stroke="#9b6ddb" stroke-width="4"/><path d="M30 50 C35 40 45 38 50 38 C55 38 65 40 70 50" stroke="#b08de8" stroke-width="3" fill="none" stroke-linecap="round"/><line x1="50" y1="20" x2="50" y2="75" stroke="#7b45b8" stroke-width="2" stroke-dasharray="3,3"/><circle cx="38" cy="42" r="4" fill="#9b6ddb"/><circle cx="62" cy="42" r="4" fill="#9b6ddb"/></svg>
             </div>
+            <h3>Área Psicológica</h3>
+            <p class="service-desc">Terapia especializada con un enfoque humanista, brindando un espacio seguro para tu bienestar emocional.</p>
+            <ul class="service-list">
+              <li>Ansiedad y Estrés</li>
+              <li>Depresión</li>
+              <li>Ataques de Pánico</li>
+              <li>Fobias</li>
+              <li>TOC (Trastorno Obsesivo-Compulsivo)</li>
+              <li>Estrés Postraumático (TEPT)</li>
+              <li>Talleres Terapéuticos</li>
+            </ul>
+            <a href="https://wa.me/50688301170?text=Hola%2C%20deseo%20agendar%20una%20cita%20en%20Legis%20Anima" target="_blank" rel="noopener" class="btn-service">Consultar Ahora</a>
+          </div>
         </div>
-    </section>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container nav-content">
-            <a href="#" class="logo-text">Legis Anima</a>
-            <a href="https://wa.me/50688301170?text=Hola,%20deseo%20agendar%20una%20cita%20en%20Legis%20Anima" class="btn btn-primary nav-cta">Agendar Cita</a>
+        <!-- Legal -->
+        <div class="service-card" id="juridico">
+          <div class="service-image jur-image">
+            <svg viewBox="0 0 600 280" fill="none" xmlns="http://www.w3.org/2000/svg" class="service-svg">
+              <rect width="600" height="280" fill="url(#jurGrad)"/>
+              <defs>
+                <linearGradient id="jurGrad" x1="0" y1="0" x2="600" y2="280" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#0a1628"/>
+                  <stop offset="100%" stop-color="#0d2040"/>
+                </linearGradient>
+              </defs>
+              <!-- Books background -->
+              <rect x="380" y="80" width="18" height="160" rx="2" fill="#1e4080" opacity="0.7"/>
+              <rect x="400" y="95" width="22" height="145" rx="2" fill="#1a3570" opacity="0.7"/>
+              <rect x="424" y="88" width="16" height="152" rx="2" fill="#243d7a" opacity="0.7"/>
+              <rect x="442" y="100" width="20" height="140" rx="2" fill="#1e4080" opacity="0.7"/>
+              <rect x="464" y="90" width="14" height="150" rx="2" fill="#1a3570" opacity="0.7"/>
+              <rect x="480" y="105" width="18" height="135" rx="2" fill="#243d7a" opacity="0.7"/>
+              <!-- Desk -->
+              <rect x="100" y="215" width="420" height="12" rx="3" fill="#162d5a"/>
+              <!-- Scales of Justice -->
+              <line x1="300" y1="90" x2="300" y2="215" stroke="#3a6abf" stroke-width="3"/>
+              <rect x="270" y="87" width="60" height="6" rx="3" fill="#4a7acf"/>
+              <!-- Left bowl -->
+              <line x1="270" y1="93" x2="240" y2="140" stroke="#3a6abf" stroke-width="2"/>
+              <path d="M215 140 Q240 155 265 140" fill="none" stroke="#5a8adf" stroke-width="2.5"/>
+              <ellipse cx="240" cy="140" rx="25" ry="8" fill="#4a7acf" opacity="0.3"/>
+              <!-- Right bowl -->
+              <line x1="330" y1="93" x2="360" y2="140" stroke="#3a6abf" stroke-width="2"/>
+              <path d="M335 140 Q360 155 385 140" fill="none" stroke="#5a8adf" stroke-width="2.5"/>
+              <ellipse cx="360" cy="140" rx="25" ry="8" fill="#4a7acf" opacity="0.3"/>
+              <!-- Base of scales -->
+              <path d="M285 215 L300 210 L315 215" fill="#3a6abf"/>
+              <rect x="288" y="209" width="24" height="6" rx="2" fill="#4a7acf"/>
+              <!-- Gavel -->
+              <rect x="130" y="185" width="60" height="18" rx="5" fill="#2a5290" transform="rotate(-30 130 185)"/>
+              <rect x="148" y="165" width="8" height="50" rx="3" fill="#3a6abf" transform="rotate(-30 148 165)"/>
+              <!-- Gold accent stars/sparkles -->
+              <circle cx="240" cy="125" r="2.5" fill="#c9a227" opacity="0.8"/>
+              <circle cx="360" cy="125" r="2.5" fill="#c9a227" opacity="0.8"/>
+              <circle cx="300" cy="80" r="3" fill="#c9a227" opacity="0.9"/>
+              <!-- Light glow -->
+              <ellipse cx="300" cy="155" rx="120" ry="60" fill="#2a5290" opacity="0.1"/>
+            </svg>
+            <div class="service-image-overlay"></div>
+            <div class="service-image-label">Área Jurídica</div>
+          </div>
+          <div class="service-content">
+            <div class="service-icon-wrap jur-icon">
+              <svg width="28" height="28" viewBox="0 0 100 100" fill="none"><rect x="35" y="55" width="30" height="35" fill="none" stroke="#4a7acf" stroke-width="4"/><path d="M30 55 L50 30 L70 55" stroke="#5a8adf" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="55" x2="70" y2="55" stroke="#4a7acf" stroke-width="3"/><line x1="50" y1="20" x2="50" y2="30" stroke="#3a6abf" stroke-width="3"/><line x1="40" y1="22" x2="60" y2="22" stroke="#3a6abf" stroke-width="3" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Área Jurídica</h3>
+            <p class="service-desc">Representación legal con rigor técnico y estrategia, siempre bajo una visión humana que protege tus derechos.</p>
+            <ul class="service-list">
+              <li>Derecho Penal</li>
+              <li>Derecho de Familia</li>
+              <li>Derecho Laboral</li>
+              <li>Derecho Constitucional</li>
+              <li>Derecho Civil</li>
+              <li>Derecho Administrativo</li>
+              <li>Servicios Notariales</li>
+            </ul>
+            <a href="https://wa.me/50688301170?text=Hola%2C%20deseo%20agendar%20una%20cita%20en%20Legis%20Anima" target="_blank" rel="noopener" class="btn-service jur-btn">Consultar Ahora</a>
+          </div>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container hero-content">
-            <div class="hero-logo-container">
-                <!-- Image will be inserted here -->
-                <img src="legis_anima_logo.png" alt="Legis Anima Logo" class="main-logo" onerror="this.style.display='none'">
-                <div class="logo-placeholder" style="display:none;">Legis Anima Logo</div>
-            </div>
-            <h1 class="hero-title">La respuesta integral a los desafíos de la vida.</h1>
-            <p class="hero-subtitle">Porque creemos que la justicia externa y la paz interna son dos caras de la misma moneda. Aquí cuidamos tu entorno legal y fortalecemos tu salud emocional bajo un mismo estándar de excelencia y calidez humana.</p>
-            <div class="hero-buttons">
-                <a href="https://wa.me/50688301170?text=Hola,%20deseo%20agendar%20una%20cita%20en%20Legis%20Anima" class="btn btn-primary">Agendar Cita por WhatsApp</a>
-            </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODALIDAD -->
+  <section class="modalidad-section">
+    <div class="container">
+      <div class="modalidad-grid">
+        <div class="modalidad-card">
+          <div class="modalidad-icon">💻</div>
+          <h3>Modalidad Virtual</h3>
+          <p>Sesiones 100% en línea desde la comodidad de tu hogar. Videollamada segura, flexible y confidencial. Disponible para clientes en todo el mundo.</p>
         </div>
-    </header>
-
-       <!-- About Us Section -->
-    <section class="about section-padding" id="nosotros">
-        <div class="container">
-            <div class="about-content">
-                <h2 class="section-title">Sobre Nosotros</h2>
-                <div class="about-text">
-                    <p>En Legis Anima, creemos que la integridad humana no puede dividirse. Por ello, hemos creado un espacio donde la técnica profesional se une a la empatía para ofrecer soluciones reales en las dos áreas más sensibles de la vida:</p>
-                    
-                    <div class="vision-grid">
-                        <div class="vision-item">
-                            <h4>Nuestra Visión Jurídica</h4>
-                            <p>Entendemos el Derecho no como un conjunto de trámites fríos, sino como la herramienta para proteger tu libertad, tu patrimonio y tu paz personal y familiar. Nuestra práctica legal se rige por el rigor técnico y la estrategia, pero siempre bajo una visión humana. Nos enfocamos en resolver el conflicto legal de manera efectiva, asegurándonos de que comprendas cada paso del proceso y te sientas respaldado en todo momento.</p>
-                        </div>
-                        <div class="vision-item">
-                            <h4>Nuestra Visión Psicológica</h4>
-                            <p>Reconocemos que cada persona carga con una historia única que merece ser escuchada con profundidad y respeto. En nuestra área de salud mental, nos alejamos de las etiquetas para enfocarnos en el equilibrio del ser humano. Proporcionamos un refugio seguro donde puedes reencontrar tu estabilidad emocional. Para nosotros, la terapia es un proceso de sanación y empoderamiento para enfrentar los desafíos de la vida con nuevas herramientas.</p>
-                        </div>
-                    </div>
-
-                    <div class="consulting-highlight">
-                        <h4>El Encuentro: Consultoría Integral</h4>
-                        <p>Lo que nos hace únicos es nuestra capacidad de entender cómo ambas áreas se entrelazan. Sabemos que un proceso legal genera estrés, y que una crisis emocional puede requerir soluciones legales claras. En Legis Anima, trabajamos de forma coordinada para que no tengas que buscar ayuda en lugares distintos; aquí, tu bienestar legal y mental son nuestra única prioridad, todo desde la comodidad y privacidad de nuestra atención presencial y en línea.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="modalidad-divider">
+          <div class="divider-line"></div>
+          <span>y</span>
+          <div class="divider-line"></div>
         </div>
-    </section>
-
-    <!-- Identity Section -->
-    <section class="identity section-padding">
-        <div class="container">
-            <div class="identity-box">
-                <h2 class="section-title text-center">Nuestra Identidad</h2>
-                <h3 class="identity-subtitle text-center">Legis Anima: Ley y Alma</h3>
-                <p class="text-center intro-identity">Nuestro nombre define nuestra promesa: la fuerza de la ley unida a la sensibilidad humana.</p>
-                
-                <div class="identity-columns">
-                    <div class="identity-col">
-                        <h4>LEGIS (Ley)</h4>
-                        <p>Representa nuestra solidez jurídica. El escudo técnico que protege tus derechos y te brinda seguridad ante cualquier proceso legal.</p>
-                    </div>
-                    <div class="identity-col">
-                        <h4>ANIMA (Alma)</h4>
-                        <p>Representa nuestra esencia psicológica. El espacio seguro para cuidar tu salud mental y encontrar equilibrio emocional.</p>
-                    </div>
-                </div>
-                <p class="text-center tagline">En Legis Anima, no resolvemos expedientes, cuidamos personas. Somos el punto donde el rigor legal abraza tu tranquilidad.</p>
-            </div>
+        <div class="modalidad-card">
+          <div class="modalidad-icon">🏛️</div>
+          <h3>Modalidad Presencial</h3>
+          <p>Atención personalizada en nuestras instalaciones en Costa Rica. Un espacio cálido, privado y profesional diseñado para tu comodidad.</p>
         </div>
-    </section>
+      </div>
+      <div class="confidencial-banner">
+        <span class="conf-icon">🔒</span>
+        <p><strong>Confidencialidad Absoluta Garantizada</strong> — Toda la información compartida en nuestros espacios está protegida bajo los más altos estándares éticos y legales de privacidad profesional.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Differentiator -->
-    <section class="differentiator section-padding">
-        <div class="container text-center">
-            <h2>Modalidad Flexible</h2>
-            <p>Todos los servicios son en <strong>Modalidad Virtual y Presencial</strong>, garantizando confidencialidad absoluta y comodidad.</p>
-            <div class="cta-direct">
-                <a href="https://wa.me/50688301170?text=Hola,%20deseo%20agendar%20una%20cita%20en%20Legis%20Anima" class="btn btn-secondary">Agenda tu cita ahora</a>
+  <!-- SOBRE NOSOTROS -->
+  <section class="about-section" id="nosotros">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-label">Sobre Nosotros</span>
+        <h2>Nuestra Filosofía</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>En Legis Anima, creemos que la integridad humana no puede dividirse. Por ello, hemos creado un espacio donde la técnica profesional se une a la empatía para ofrecer soluciones reales en las dos áreas más sensibles de la vida:</p>
+
+          <div class="about-pillar">
+            <div class="pillar-header">
+              <div class="pillar-icon jur-bg">⚖️</div>
+              <h4>Nuestra Visión Jurídica</h4>
             </div>
+            <p>Entendemos el Derecho no como un conjunto de trámites fríos, sino como la herramienta para proteger tu libertad, tu patrimonio y tu paz personal y familiar. Nuestra práctica legal se rige por el rigor técnico y la estrategia, pero siempre bajo una visión humana. Nos enfocamos en resolver el conflicto legal de manera efectiva, asegurándonos de que comprendas cada paso del proceso y te sientas respaldado en todo momento.</p>
+          </div>
+
+          <div class="about-pillar">
+            <div class="pillar-header">
+              <div class="pillar-icon psi-bg">🧠</div>
+              <h4>Nuestra Visión Psicológica</h4>
+            </div>
+            <p>Reconocemos que cada persona carga con una historia única que merece ser escuchada con profundidad y respeto. En nuestra área de salud mental, nos alejamos de las etiquetas para enfocarnos en el equilibrio del ser humano. Proporcionamos un refugio seguro donde puedes reencontrar tu estabilidad emocional. Para nosotros, la terapia es un proceso de sanación y empoderamiento para enfrentar los desafíos de la vida con nuevas herramientas.</p>
+          </div>
+
+          <div class="about-pillar highlight-pillar">
+            <div class="pillar-header">
+              <div class="pillar-icon both-bg">✨</div>
+              <h4>El Encuentro: Consultoría Integral</h4>
+            </div>
+            <p>Lo que nos hace únicos es nuestra capacidad de entender cómo ambas áreas se entrelazan. Sabemos que un proceso legal genera estrés, y que una crisis emocional puede requerir soluciones legales claras. En Legis Anima, trabajamos de forma coordinada para que no tengas que buscar ayuda en lugares distintos; aquí, tu bienestar legal y mental son nuestra única prioridad, todo desde la comodidad y privacidad de nuestra atención presencial y en línea.</p>
+          </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>Legis Anima</h3>
-                    <p>Justicia para tu vida, paz para tu mente.</p>
-                </div>
-                <div class="footer-social">
-                    <p>Búscanos en Redes Sociales como <strong>Legis Anima</strong></p>
-                </div>
+        <div class="about-visual">
+          <div class="about-visual-card">
+            <div class="visual-logo-mini">
+              <svg viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg" width="160">
+                <rect x="82" y="185" width="36" height="44" fill="#1e52a0"/>
+                <rect x="76" y="178" width="48" height="9" rx="2" fill="#1a4a8a"/>
+                <rect x="68" y="172" width="64" height="8" rx="2" fill="#1a4a8a"/>
+                <line x1="88" y1="185" x2="88" y2="229" stroke="#2563c7" stroke-width="1" opacity="0.5"/>
+                <line x1="94" y1="185" x2="94" y2="229" stroke="#2563c7" stroke-width="1" opacity="0.5"/>
+                <line x1="100" y1="185" x2="100" y2="229" stroke="#2563c7" stroke-width="1" opacity="0.5"/>
+                <line x1="106" y1="185" x2="106" y2="229" stroke="#2563c7" stroke-width="1" opacity="0.5"/>
+                <line x1="112" y1="185" x2="112" y2="229" stroke="#2563c7" stroke-width="1" opacity="0.5"/>
+                <rect x="70" y="226" width="60" height="8" rx="2" fill="#1a4a8a"/>
+                <ellipse cx="100" cy="95" rx="55" ry="46" fill="#5c2d91" opacity="0.07"/>
+                <path d="M100 52 C82 49 65 58 61 72 C57 85 63 96 71 104 C77 110 85 114 93 116 C96 117 98 117 100 117" stroke="#7b3fbf" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <path d="M100 52 C118 49 135 58 139 72 C143 85 137 96 129 104 C123 110 115 114 107 116 C104 117 102 117 100 117" stroke="#7b3fbf" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <line x1="100" y1="52" x2="100" y2="117" stroke="#5c2d91" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.6"/>
+                <path d="M70 75 C76 71 82 73 86 77" stroke="#9b6ddb" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M64 87 C72 82 80 85 85 90" stroke="#9b6ddb" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M130 75 C124 71 118 73 114 77" stroke="#9b6ddb" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M136 87 C128 82 120 85 115 90" stroke="#9b6ddb" stroke-width="2" fill="none" stroke-linecap="round"/>
+              </svg>
             </div>
-            <div class="footer-bottom">
-                <p>Servicios profesionales ofrecidos en Costa Rica para todo el mundo. Profesionales incorporados a sus respectivos colegios profesionales. © 2026 Legis Anima.</p>
+            <div class="visual-stats">
+              <div class="stat-item"><span class="stat-num">2</span><span class="stat-label">Áreas Profesionales</span></div>
+              <div class="stat-item"><span class="stat-num">∞</span><span class="stat-label">Compromiso con tu bienestar</span></div>
+              <div class="stat-item"><span class="stat-num">CR</span><span class="stat-label">Costa Rica al mundo</span></div>
             </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <!-- Floating WhatsApp -->
-    <a href="https://wa.me/50688301170?text=Hola,%20deseo%20agendar%20una%20cita%20en%20Legis%20Anima" class="whatsapp-float" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    </a>
+  <!-- NUESTRA IDENTIDAD -->
+  <section class="identidad-section" id="identidad">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Nuestra Identidad</span>
+        <h2>Legis Anima: Ley y Alma</h2>
+        <p>Nuestro nombre define nuestra promesa: la fuerza de la ley unida a la sensibilidad humana.</p>
+      </div>
+      <div class="identidad-grid">
+        <div class="identidad-card legis-card">
+          <div class="identidad-symbol">⚖️</div>
+          <h3><span class="id-highlight-blue">LEGIS</span> — Ley</h3>
+          <p>Representa nuestra solidez jurídica. El escudo técnico que protege tus derechos y te brinda seguridad ante cualquier proceso legal.</p>
+        </div>
+        <div class="identidad-plus">+</div>
+        <div class="identidad-card anima-card">
+          <div class="identidad-symbol">🧠</div>
+          <h3><span class="id-highlight-purple">ANIMA</span> — Alma</h3>
+          <p>Representa nuestra esencia psicológica. El espacio seguro para cuidar tu salud mental y encontrar equilibrio emocional.</p>
+        </div>
+      </div>
+      <div class="identidad-quote">
+        <blockquote>
+          "En Legis Anima, no resolvemos expedientes, <strong>cuidamos personas.</strong> Somos el punto donde el rigor legal abraza tu tranquilidad."
+        </blockquote>
+      </div>
+    </div>
+  </section>
 
+  <!-- CTA SECTION -->
+  <section class="cta-section" id="cita">
+    <div class="container">
+      <div class="cta-box">
+        <h2>¿Listo para dar el primer paso?</h2>
+        <p>Agenda tu cita hoy. Atención personalizada, confidencial y profesional — en línea o presencial.</p>
+        <a href="https://wa.me/50688301170?text=Hola%2C%20deseo%20agendar%20una%20cita%20en%20Legis%20Anima" target="_blank" rel="noopener" class="btn-whatsapp btn-large" id="cta-main">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Agendar Cita por WhatsApp
+        </a>
+        <p class="cta-phone">+506 8830-1170 · <a href="mailto:info@legisanima.com">info@legisanima.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL MEDIA -->
+  <section class="social-section">
+    <div class="container">
+      <h3>Búscanos en Redes Sociales como <strong>Legis Anima</strong></h3>
+      <div class="social-links">
+        <a href="https://www.facebook.com/legisanima" target="_blank" rel="noopener" class="social-link" id="social-facebook" aria-label="Facebook Legis Anima">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          <span>Facebook</span>
+        </a>
+        <a href="https://www.instagram.com/legisanima" target="_blank" rel="noopener" class="social-link" id="social-instagram" aria-label="Instagram Legis Anima">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <span>Instagram</span>
+        </a>
+        <a href="https://www.linkedin.com/company/legisanima" target="_blank" rel="noopener" class="social-link" id="social-linkedin" aria-label="LinkedIn Legis Anima">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://wa.me/50688301170?text=Hola%2C%20deseo%20agendar%20una%20cita%20en%20Legis%20Anima" target="_blank" rel="noopener" class="social-link whatsapp-social" id="social-whatsapp" aria-label="WhatsApp Legis Anima">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">
+        <span class="footer-logo-text">Legis <em>Anima</em></span>
+        <p class="footer-slogan">Ley y Alma</p>
+      </div>
+      <div class="footer-divider"></div>
+      <p class="footer-legal">Servicios profesionales ofrecidos en Costa Rica para todo el mundo. Profesionales incorporados a sus respectivos colegios profesionales.</p>
+      <p class="footer-copy">© 2026 Legis Anima. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/50688301170?text=Hola%2C%20deseo%20agendar%20una%20cita%20en%20Legis%20Anima" target="_blank" rel="noopener" class="fab-whatsapp" id="fab-whatsapp" aria-label="Contáctanos por WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
